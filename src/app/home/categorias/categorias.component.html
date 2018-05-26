@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let categoria of categorias" [class.selected]="categoria === selecteCategoria" (click)="onSelect(categoria)">
+    <span class="badge">{{categoria.id}}</span> {{categoria.name}}</li>
+</ul>
+
+<app-categorias [categoria]="selectedCategoria"></app-categorias>
